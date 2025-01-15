@@ -1,22 +1,422 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Bilal Firtina</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <button type="button" class="btn btn-danger">Danger</button>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img
+              src="/images/letter-b.gif"
+              alt="Bootstrap"
+              width="40"
+              height="30"
+            />
+
+            <img
+              src="/images/letter-f.gif"
+              alt="Bootstrap"
+              width="40"
+              height="30"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hakkımda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Aldığım Eğitimler
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Lise</a></li>
+                  <li><a class="dropdown-item" href="#">Üniversite</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Meslek Hayatı </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mt-3">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide carousel-fade"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="/images/IMG_20200115_184947.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Papağanım PAŞA</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="/images/IMG_20230221_151652.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p class="text-white">Yerebatan Sarnıcı</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/images/profil fotosu.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <h3 class="text-center mt-3">HAKKIMDA</h3>
+        <p class="text-align">
+          Merhabalar, ben Bilal Fırtına. 1993 yılında Adana'da doğdum. İlk ve
+          orta okul öğrenimimi Adana'da tamamladıktan sonra; lise eğitimime
+          İstanbul Adalar ilçesinde bulunan Deniz Lisesi'nde devan ettim. Deniz
+          Lisesi'nden mezun olmaya müteakip Deniz Harp Okulu'ndan 2015 yılında
+          mezun oldum. DzKK'na ait çeşitli gemilerde görev aldıktan sonra
+          görevimden ayrıldım ve babamın yıllardır devam ettirdiği damacana su
+          dağıtım işine başladım. Aile içi çeşitli anlaşmazlıklardan sonra ve
+          ticaret hayatında ihtiyacını fazlasıyla hissettiğim ve kendiğimi
+          geliştirmek istediğim yazılım alanına yöneldim. Halihazırda Full-Stack
+          bir yazılımcı olmak amacıyla çalışmalarıma devam ediyorum. Şuan eğer
+          bu satırları okuyorsanız bu site Web Tasarım dersi kapsamında ve
+          Bootstrap kütüphanesinde kendimi geliştirmem amacıyla yaptığım ilk
+          sitedir. Kıymetli vaktiniz için teşekkür ederim. Ayrıca burdan
+          <b>Nuran hocama</b> yardımları için minnet ve şükran duygularımı
+          iletmeyi bir borç olarak görüyorum. <b>Teşekkürler Nuran hocam.</b>
+        </p>
+        <div class="row mt-5">
+          <div class="col-sm">
+            <div class="card mb-5">
+              <img
+                src="/images/IMG_20200115_184947.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Erkek kardeşimin amansız ısrarları sonucu bu arkadaşı tüyü
+                  yokken evimize almıştık.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img
+                src="/images/IMG_20230221_151652.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  İstanbul'da okuyup hiç ziyaret etmemiştim yıllar sonra ziyaret
+                  ettim.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img
+                src="/images/profil fotosu.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Bu fotoğrafı iş başvurularında kullanmak üzere Linkedin gibi
+                  hesaplar için çektirmiştim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card mb-5">
+              <img
+                src="/images/BİLAL-PAŞA-modified.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Paşayla çekilmiş olduğum hatıra favori fotoğrafım ve farklı
+                  versiyonları.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img
+                src="/images/profile-pic.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Paşayla çekilmiş olduğum hatıra favori fotoğrafım ve farklı
+                  versiyonları.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <img
+                src="/images/profile-pic-2.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Paşayla çekilmiş olduğum hatıra favori fotoğrafım ve farklı
+                  versiyonları.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 mb-5">
+            <div class="card">
+              <div class="card-header">Sosyal Medya</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <img
+                    src="/images/svg/instagram-brands-solid.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                  <a
+                    class="text-primary-emphasis text-decoration-none"
+                    href="https:www.instagram.com"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <img
+                    src="/images/svg/facebook-brands-solid.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                  <a
+                    class="text-primary-emphasis text-decoration-none"
+                    href="https:www.facebook.com"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <img
+                    src="/images/svg/linkedin-brands-solid.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                  <a
+                    class="text-primary-emphasis text-decoration-none"
+                    href="https:www.linkedin.com"
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-8">
+            <div class="card">
+              <div class="card-header">Günün Sözü</div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>
+                    "Kanunlar örümcek ağı gibidir, zayıflar ağa takılır güçlüler
+                    ağı deler geçer."
+                  </p>
+                  <footer class="blockquote-footer">Balzac</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <nav
+          class="navbar navbar-expand-lg bg-secondary d-flex justify-content-between"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand ms-1" href="/index.html">
+              <img
+                src="/images/letter-b.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+              <img
+                src="/images/letter-i.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+
+              <img
+                src="/images/letter-L.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+              <img
+                src="/images/letter-a.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+              <img
+                src="/images/letter-L.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+              <img
+                src="/images/letter-f.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+              <img
+                src="/images/letter-i.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+              <img
+                src="/images/letter-r.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+              <img
+                src="/images/letter-t.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+              <img
+                src="/images/letter-i.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+              <img
+                src="/images/letter-n.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+              <img
+                src="/images/letter-a.gif"
+                alt="Bootstrap"
+                width="30"
+                height="30"
+              />
+            </a>
+          </div>
+          <p class="text-white m-0 text-nowrap ms-3">Bütün Hakları Saklıdır.</p>
+        </nav>
+      </footer>
+    </main>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
   </body>
